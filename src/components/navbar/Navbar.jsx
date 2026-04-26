@@ -19,9 +19,9 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className='flex justify-center items-center gap-3 mb-4 md:mb-0 mt-7 md:mt-0'>
+            <div className='flex justify-center items-center gap-3 mb-4 md:mb-0 mt-3 md:mt-0'>
                 <Image src={avatar} weidth={41} height={41} alt='avatar' />
-                <button className='bg-[#403F3F] font-medium md:font-semibold text-lg  md:text-xl text-white py-3 px-11'>
+                <button className='bg-[#403F3F] font-medium md:font-semibold text-lg  md:text-xl text-white py-1 md:py-3 px-3 md:px-11'>
                     Login
                 </button>
             </div>
