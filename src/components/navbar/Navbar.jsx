@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import avatar from '@/assets/user.png'
+import Navlink from '../navlink/Navlink';
 const Navbar = () => {
     return (
         <div className='flex flex-col-reverse md:flex-row justify-between items-center mt-5 mx-auto w-11/12'>
@@ -9,13 +10,13 @@ const Navbar = () => {
             <div>
                 <ul className='flex items-center justify-center gap-6'>
                     <li>
-                        <Link href={'/'}>Home</Link>
+                        <Navlink href={'/'}>Home</Navlink>
                     </li>
                     <li>
-                        <Link href={'/about'}>About</Link>
+                        <Navlink href={'/about'}>About</Navlink>
                     </li>
                     <li>
-                        <Link href={'career'}>Career</Link>
+                        <Navlink href={'/career'}>Career</Navlink>
                     </li>
                 </ul>
             </div>
