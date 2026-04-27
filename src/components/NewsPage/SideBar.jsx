@@ -7,13 +7,13 @@ const leftSideBar = ({ catagory, isActive }) => {
             <p className='font-semibold text-xl text-[#403F3F] mb-5'>
                 All Category
             </p>
-            <ul className='space-y-5 text-center g'>
+            <ul className='space-y-5 '>
                 {
                     catagory.news_category.map(i =>
                         <li
                             className={`
                                 ${isActive === i.category_id && 'bg-[#E7E7E7] py-4 px-13'}
-                                `}
+                                pl-10`}
                             key={i.category_id}>
                             <Link
                                 href={`/newsCategory/${i.category_id}`}
