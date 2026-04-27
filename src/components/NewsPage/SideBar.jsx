@@ -5,7 +5,7 @@ const leftSideBar = ({ catagory, isActive }) => {
     return (
         <div>
             <p className='font-semibold text-xl text-[#403F3F] mb-5'>
-                All Caterogy
+                All Category
             </p>
             <ul className='space-y-5 text-center g'>
                 {
@@ -16,7 +16,7 @@ const leftSideBar = ({ catagory, isActive }) => {
                                 `}
                             key={i.category_id}>
                             <Link
-                                href={`category/${i.category_id}`}
+                                href={`/newsCategory/${i.category_id}`}
                                 className={`font-medium text-[#9F9F9F] text-xl`}>
                                 {i.category_name}
                             </Link>
