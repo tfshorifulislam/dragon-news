@@ -1,4 +1,6 @@
+import { id } from 'date-fns/locale';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { CiBookmark } from "react-icons/ci";
 import { CiShare2 } from "react-icons/ci";
@@ -34,9 +36,11 @@ const NewsCard = ({ n }) => {
             <p className='line-clamp-4 px-5 leadign-7 text-[#706F6F] mb-4'>
                 {n.details}
             </p>
-            <p className='font-semibold leading-7 pl-5 mb-5 text-[#FF8C47] '>
+            <Link
+                href={`/news-details/${n._id}`}
+                className='btn font-semibold leading-7 ml-5 mb-5 text-[#FF8C47] '>
                 Read More
-            </p>
+            </Link>
             <div className="divider px-5 mb-5"></div>
             <div className='flex justify-between items-center px-5 mb-5'>
                 <span className='flex items-center justify-center gap-3 '>
