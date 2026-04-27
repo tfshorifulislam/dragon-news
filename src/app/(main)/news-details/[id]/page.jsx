@@ -35,7 +35,7 @@ const NewsDetailsPage = async ({ params }) => {
                         </p>
                         <div>
                             <Link
-                                href={'/'}>
+                                href={`/newsCategory/${n.category_id}`}>
                                 <button
                                     className='flex items-center gap-3 text-xl font-medium text-white btn border-none bg-[#D72050] '>
                                     <FaArrowLeftLong /> All news in this category
