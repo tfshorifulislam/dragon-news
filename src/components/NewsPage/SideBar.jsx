@@ -7,17 +7,17 @@ const leftSideBar = ({ catagory, isActive }) => {
             <p className='font-semibold text-xl text-[#403F3F] mb-5'>
                 All Caterogy
             </p>
-            <ul className='space-y-5'>
+            <ul className='space-y-5 text-center g'>
                 {
-                    catagory.map(i =>
+                    catagory.news_category.map(i =>
                         <li
                             className={`
-                                ${isActive === catagory.category_id && 'bg-green-700'}
+                                ${isActive === i.category_id && 'bg-[#E7E7E7] py-4 px-13'}
                                 `}
                             key={i.category_id}>
                             <Link
-                                href={'/'}
-                                className={`font-medium text-[#9F9F9F] text-xl py-4 px-13`}>
+                                href={`category/${i.category_id}`}
+                                className={`font-medium text-[#9F9F9F] text-xl`}>
                                 {i.category_name}
                             </Link>
                         </li>)
