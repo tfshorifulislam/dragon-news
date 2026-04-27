@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SideBar from '@/components/NewsPage/SideBar';
+import RightSideBar from '@/components/NewsPage/RightSideBar';
 const dataFetch = async () => {
   const res = await fetch('https://openapi.programming-hero.com/api/news/categories');
   const data = await res.json()
@@ -18,7 +19,7 @@ const HomePage = async () => {
 
       </div>
       <div className='col-span-2'>
-
+        <RightSideBar />
       </div>
     </div>
   );
